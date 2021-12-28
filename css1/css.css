@@ -1,3 +1,5 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+/*  */
 *{
 	margin: 0;
 	padding: 0;
@@ -13,21 +15,30 @@
 
 	.clear{clear:  both;}
 
+	.w60{
+		width: 60%;
+		float: left;
+	}
 	.w50{
 		width: 50%;
 		float: left;
 		font-size: 17px;
 	}
 
-	.center{
-		text-align: center;
+	.w40{
+		width: 40%;
+		float: left;
 	}
 	.w33{
 		float: left;
 		width: 33.3%;
 		color: white;
 		display: block;
-
+		
+	}
+	
+	.center{
+			text-align: center;
 	}
 	
 /*Clases do banner do site*/
@@ -56,7 +67,6 @@ nav.menu-desktop ul{
 	position: relative;
 }
 nav.menu-desktop li{
-
 	padding: 0 10px;
 	font-family: 'Roboto', sans-serif;
 	display: inline-block;
@@ -458,61 +468,112 @@ section.sobre__final p{
 	font-weight: normal;
 }
 
+/*Área do contato*/
 
+section.contato{
+	padding: 30px 0;
+
+}
+section.contato .w50,
+section.contato .w100{
+	padding-right: 0 10px;
+
+}
+
+.formulario form{
+	margin-top: 10px;
+}
+
+.formulario h2{
+	background-color: #dddddd;
+	text-align: center;
+	color: #acac9d;
+	font-size: 17px;
+	font-weight: normal;
+	border-left: 3px solid #cccccc;
+	padding: 4px 0;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]
+{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding-left:8px ;
+}
+.formulario textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding:10px ;
+	resize: vertical;
+}
+
+.tags-form{
+	padding-left: 50px;
+}
+
+.tags-form h2{
+	font-weight: normal;
+}
+
+.tags-form p{
+	font-weight: lighter;
+}
+
+.tags-form p.tag-contato{
+	color: white;
+	background-color: #249b8f;
+	text-align: center;
+	margin-top: 6px;
+	padding: 8px 0;
+}
 
 /*=======Área do responsivo========*/
 @media screen and (max-width: 768px){
+	.tags-form{padding-left: 1rem;}
+	.formulario input[type=text],
+	.formulario input[type=email]{margin-bottom: 15px;width: 100%;}
 	footer.footer1{
 		text-align: center;
 	}
-	.cards-single{
-		width: 100%;
-	}
-	.w50{
-		width: 100%;
-	}
-	.box-icone-single{
-		width: 100%;
-	}
-	.equipe-container{
-	width: 100%;
-	}
-	.sobre-container{
-	width: 100%;
-	}
-	.w33{
-		width: 100%;
-		margin: 2%;
-	}
+	.cards-single{width: 100%;}
 	
-	.sobre__noticia__single img{
-		width:100% ;
-		}
-	.sobre__noticia__single p{
-		width: 100%;
-		padding: 0;
-		
-	}
-	.paragrafo__noticia__single{
-		width: 100%;
-		padding: 10px 0;
-		margin: 0;
-	}
+	.w100 .w60 .w50 .w40{width: 100%;padding: 0 10px;}
+	
+	.box-icone-single{width: 100%;}
+	
+	.equipe-container{width: 100%;}
+	
+	.sobre-container{ width: 100%;}
+	
+	.w33{ width: 100%; margin: 2%;}
+	
+	
+	.sobre__noticia__single img{ width:100% ;}
+	
+	.sobre__noticia__single p{ width: 100%; padding: 0;}
+	
+	.paragrafo__noticia__single{ width: 100%; padding: 10px 0; margin: 0;}
+	
 	.equipe-circles-single{
-	padding: 0 20px;
-	width: 50%;
-	margin-bottom: 10px;
-	
-}/*final do sresponsívos 768px*/
+	padding: 0 20px; width: 50%; margin-bottom: 10px;}
+}
+
+/*final do sresponsívos 768px*/
 @media screen and (max-width: 500px){
+	.formulario input[type=text],
+	.formulario input[type=email]{ margin-bottom: 15px; width: 100%;}
 	
 	.card-text{width: 60%;}
 
-	.cards-single{padding: ;: 10px:}
+	.cards-single{padding: 10px;}
 
-	.w33{width: 100%; margin: 2%;}
+	.w100 .w60 .w50 .w40 .w33{
+		padding-right: 0 10px; width: 100%; margin: 2%;}
 	
-	.equipe-circles-single{padding: 0 20px;
-		width: 100%; margin-bottom: 10px;}
-	
-}/*Final do responsivo*/
+	.equipe-circles-single{padding: 0 20px; width: 100%; margin-bottom: 10px;}
+}
